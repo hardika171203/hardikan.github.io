@@ -1,0 +1,642 @@
+:root {
+  --color-primary-light: #EA839B;
+  --color-primary: #E63B62;
+  --color-primary-dark: #661B2C;
+  --color-secondary-light: #5EB4DB;
+  --color-secondary: #12668E;
+  --color-secondary-dark: #0C435C;
+  --color-white: #e5e5e5;
+  --color-black: #333;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #abd5ea;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  color: var(--color-black);
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+.normal {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 10vw;
+}
+
+.text-primary {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.btn {
+  display: block;
+  width: max-content;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+}
+.btn--primary {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  transition: all 0.3s;
+}
+.btn--primary:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+.btn--submit {
+  color: var(--color-black);
+  background-color: #fff;
+  transition: all 0.5s;
+  border: 1px solid #999;
+}
+.btn--submit:hover {
+  color: #fff;
+  background-color: var(--color-black);
+}
+
+.margin-sm {
+  margin: 1rem;
+}
+
+.margin-md {
+  margin: 2rem;
+}
+
+.margin-lg {
+  margin: 4rem;
+}
+
+.margin-x-sm {
+  margin: 0 1rem;
+}
+
+.margin-x-md {
+  margin: 0 2rem;
+}
+
+.margin-x-lg {
+  margin: 0 4rem;
+}
+
+.margin-y-sm {
+  margin: 1rem 0;
+}
+
+.margin-y-md {
+  margin: 2rem 0;
+}
+
+.margin-y-lg {
+  margin: 4rem 0;
+}
+
+.padding-sm {
+  padding: 0 1rem;
+}
+
+.padding-md {
+  padding: 0 2rem;
+}
+
+.padding-lg {
+  padding: 0 4rem;
+}
+
+.padding-x-sm {
+  padding: 0 1rem;
+}
+
+.padding-x-md {
+  padding: 0 2rem;
+}
+
+.padding-x-lg {
+  padding: 0 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  box-shadow: 1px 12px 19px -12px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 12px 19px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 12px 19px -12px rgba(0,0,0,0.75);
+ top: 0;
+ left: 0;
+ background-color: #fff;
+}
+.nav--logo {
+  height: 80%;
+}
+.nav--link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+.nav--link_item {
+  color: var(--color-black);
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 1rem;
+}
+.nav--link_item:hover {
+  color: var(--color-primary);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 90vh;
+}
+
+.header--title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.header--subtitle {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header--wrapper {
+  padding: 1rem;
+}
+.header--hero {
+  justify-self: right;
+  width: 80%;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(toko-kue.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h3 {
+  color: white;
+  font-size: 34px;
+
+}
+
+#banner h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+#banner a {
+  text-decoration: none;
+  color: black;
+}
+
+#banner button:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.carousel--img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.about--img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.about--detail {
+  padding: 2rem 4rem;
+}
+.about--title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.about--subtitle {
+  font-size: 30px;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.newsletter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-color: #F2D5DB;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  
+}
+.newsletter--detail {
+  padding: 4rem;
+}
+.newsletter--detail_title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.newsletter--form {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.newsletter--form input {
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.newsletter--form textarea {
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.newsletter--form textarea::placeholder {
+  font-family: "Open sans", sans-serif;
+}
+
+.footer {
+  background-color: #eaeaea;
+  padding: 4rem 0;
+}
+.footer--grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.footer--logo {
+  width: 60%;
+}
+.footer--list_head {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.footer--list a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-black);
+}
+.footer--list a:hover {
+  text-decoration: underline;
+}
+
+#product-1 h2,
+#product-1 h6{
+  font-family: 'Noto Nastaliq Urdu', serif;
+}
+
+#product-1 h2 {
+  font-size: 60px;
+}
+
+#product-1 h6 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#product-1 span {
+  font-size: 40px;
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+
+/* end dari index */
+
+/* product */
+
+#product-1 {
+  text-align: center;
+}
+
+#product-1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#product-1 .pro {
+  background-color: #2b637d;
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #a2e6f8;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+#product-1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+#product-1 .pro img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product-1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product-1 .pro .des span {
+  color: white;
+  font-size: 13px
+}
+
+#product-1 .pro .des h5 {
+  padding-top: 7px;
+  color: white;
+  font-size: 15px;
+}
+
+#product-1 .pro .des h4 {
+  padding-top: 5px;
+  color: var(--color-primary-light);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#product-1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #E63B62;
+  border-radius: 50px;
+  border: 1px solid #f0c5ea;
+  background-color: #eaeaea;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+#pagination {
+  text-align: center;
+
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #12668E;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* detai product */
+
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+#prodetails .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetails .single-prodetails {
+  width: 50%;
+  padding-top: 30px;
+
+}
+
+#prodetails .single-prodetails h4 {
+  padding: 40px 0 20px 0;
+}
+
+#prodetails .single-prodetails h2 {
+  font-size: 27px;
+}
+
+#prodetails .single-prodetails input {
+  width: 50px;
+  height: 47px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+#prodetails .single-prodetails input:focus{
+  outline: none;
+}
+
+#prodetails .single-prodetails button {
+  background: var(--color-primary-light);
+  color: white;
+}
+
+#prodetails .single-prodetails span {
+  line-height: 25px;
+}
+
+/* end dari product */
+
+
+/* Gallery */
+
+#banner-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(galery/toko-cupcake.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner-1 h3 {
+  color: white;
+  font-size: 34px;
+
+}
+
+#banner-1 h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+#banner-1 a {
+  text-decoration: none;
+  color: black;
+}
+
+#banner-1 button:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+#banner-1:hover {
+  box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -moz-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  transition: 0.2s ease;
+}
+
+#banner-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(toko-kue.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner-2 h3 {
+  color: white;
+  font-size: 34px;
+
+}
+
+#banner-2 h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+#banner-2 a {
+  text-decoration: none;
+  color: black;
+}
+
+#banner-2 button:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+#banner-2:hover {
+  box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -moz-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  transition: 0.2s ease;
+}
+
+#banner-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(galery/cake-shop.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner-3 h3 {
+  color: white;
+  font-size: 34px;
+
+}
+
+#banner-3 h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+#banner-3 a {
+  text-decoration: none;
+  color: black;
+}
+
+#banner-3 button:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+#banner-3:hover {
+  box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -moz-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  transition: 0.2s ease;
+}
+
+#product-1 h3 {
+  font-size: 55px;
+  font-family: 'Noto Nastaliq Urdu', serif;
+  color: rgb(46, 54, 110);
+}
+
+/* end galery */
+
